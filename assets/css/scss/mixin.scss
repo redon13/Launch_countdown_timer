@@ -1,0 +1,9 @@
+
+
+// media query
+
+@mixin mediaQ($screenSize){
+  @media only screen and (max-width: $screenSize){
+    @content;
+  }
+}
