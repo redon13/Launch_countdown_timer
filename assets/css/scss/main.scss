@@ -241,9 +241,14 @@ body{
       }
     }
   }
-  .attribution { font-size: 11px; text-align: center; }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: $secondary-text-color;
+  }
   .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: $primary-text-color;
+    text-decoration: none;
 
     &:hover {
       color: $hover-color;

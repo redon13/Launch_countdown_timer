@@ -250,9 +250,11 @@ body p {
 .footer-section .attribution {
   font-size: 11px;
   text-align: center;
+  color: #70708F;
 }
 .footer-section .attribution a {
-  color: #3e52a3;
+  color: #C7C6CC;
+  text-decoration: none;
 }
 .footer-section .attribution a:hover {
   color: #d4516f;
