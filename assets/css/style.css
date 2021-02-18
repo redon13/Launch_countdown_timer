@@ -19,12 +19,12 @@ body p {
   font-size: 1.8em;
   font-weight: bold;
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 760px) {
   body p {
     font-size: 1.3em;
   }
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 560px) {
   body p {
     font-size: 1em;
   }
@@ -43,17 +43,17 @@ body p {
   margin-bottom: 80px;
   font-size: 2em;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 940px) {
   .title {
     font-size: 1.5em;
   }
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 760px) {
   .title {
     font-size: 1em;
   }
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 560px) {
   .title {
     font-size: 0.8em;
   }
@@ -76,22 +76,22 @@ body p {
   font-weight: 100;
   font-size: 1em;
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1140px) {
   .timer-section .label {
     font-size: 1em;
   }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 940px) {
   .timer-section .label {
     font-size: 0.8em;
   }
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 760px) {
   .timer-section .label {
     font-size: 0.6em;
   }
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 560px) {
   .timer-section .label {
     font-size: 0.4em;
   }
@@ -101,10 +101,11 @@ body p {
   border-radius: 6px 6px 6px 6px;
   padding: 30px;
   color: #d4516f;
-  font-size: 3em;
+  font-size: 5em;
   margin: 20px;
   font-weight: bold;
-  width: 195px;
+  width: 240px;
+  height: 240px;
   position: relative;
 }
 .timer-section .digit:before {
@@ -115,36 +116,43 @@ body p {
   border-radius: 10px;
   position: absolute;
   left: -6px;
-  top: 74px;
+  top: 113px;
   z-index: 10;
   border-left: 6px solid #1E1E2A;
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1140px) {
   .timer-section .digit:before {
     height: 12px;
     width: 8px;
     position: absolute;
     left: -6px;
-    top: 47px;
+    top: 92px;
     z-index: 10;
     border-left: 6px solid #1E1E2A;
   }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 940px) {
   .timer-section .digit:before {
-    top: 42px;
+    top: 73px;
   }
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 760px) {
   .timer-section .digit:before {
     height: 8px;
     width: 6px;
-    top: 30px;
+    top: 55px;
   }
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 560px) {
   .timer-section .digit:before {
-    top: 22px;
+    height: 6px;
+    top: 34px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .timer-section .digit:before {
+    height: 6px;
+    top: 26px;
   }
 }
 .timer-section .digit:after {
@@ -155,72 +163,93 @@ body p {
   border-radius: 10px;
   position: absolute;
   right: -6px;
-  top: 74px;
+  top: 113px;
   z-index: 10;
   border-right: 6px solid #1e1f29;
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1140px) {
   .timer-section .digit:after {
     height: 12px;
     width: 2px;
     position: absolute;
     right: -6px;
-    top: 47px;
+    top: 92px;
     z-index: 10;
     border-left: 6px solid #1E1E2A;
   }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 940px) {
   .timer-section .digit:after {
-    top: 42px;
+    top: 73px;
   }
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 760px) {
   .timer-section .digit:after {
     height: 8px;
     width: 1px;
-    top: 30px;
+    top: 55px;
   }
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 560px) {
   .timer-section .digit:after {
-    top: 22px;
+    height: 6px;
+    top: 34px;
   }
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 390px) {
+  .timer-section .digit:after {
+    height: 6px;
+    top: 26px;
+  }
+}
+@media only screen and (max-width: 1140px) {
   .timer-section .digit {
     border-radius: 6px 6px 6px 6px;
     padding: 20px;
-    font-size: 2em;
+    font-size: 4.5em;
     margin: 15px;
-    width: 145px;
+    width: 200px;
+    height: 200px;
   }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 940px) {
   .timer-section .digit {
     border-radius: 6px 6px 6px 6px;
     padding: 18px;
-    font-size: 1.8em;
+    font-size: 3.5em;
     margin: 12px;
-    width: 110px;
+    width: 160px;
+    height: 160px;
   }
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 760px) {
   .timer-section .digit {
     border-radius: 6px 6px 6px 6px;
     padding: 16px;
-    font-size: 1.6em;
+    font-size: 3.3em;
     margin: 10px;
-    width: 80px;
+    width: 120px;
+    height: 120px;
   }
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 560px) {
   .timer-section .digit {
     border-radius: 6px 6px 6px 6px;
     padding: 14px;
-    font-size: 1.4em;
+    font-size: 2.8em;
+    margin: 8px;
+    width: 80px;
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .timer-section .digit {
+    border-radius: 6px 6px 6px 6px;
+    padding: 14px;
+    font-size: 1.8em;
     margin: 8px;
     width: 60px;
+    height: 60px;
   }
 }
 

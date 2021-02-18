@@ -22,10 +22,10 @@ body{
     font-size: 1.8em;
     font-weight: bold;
 
-    @include mediaQ($layout-breakpoint-small){
+    @include mediaQ($layout-breakpoint-medium){
       font-size: 1.3em;
     }
-    @include mediaQ($layout-breakpoint-extra-small){
+    @include mediaQ($layout-breakpoint-small){
       font-size: 1em;
     }
   }
@@ -45,15 +45,15 @@ body{
   margin-bottom: 80px;
   font-size: 2em;
 
-  @include mediaQ($layout-breakpoint-medium){
+  @include mediaQ($layout-breakpoint-large){
     font-size: 1.5em;
   }
 
-  @include mediaQ($layout-breakpoint-small){
+  @include mediaQ($layout-breakpoint-medium){
     font-size: 1em;
   }
 
-  @include mediaQ($layout-breakpoint-extra-small){
+  @include mediaQ($layout-breakpoint-small){
     font-size: 0.8em;
   }
 }
@@ -75,17 +75,17 @@ body{
       font-size: 1em;
     }
 
-    @include mediaQ($layout-breakpoint-large){
+    @include mediaQ($layout-breakpoint-xlarge){
       font-size: 1em;
     }
-    @include mediaQ($layout-breakpoint-medium){
+    @include mediaQ($layout-breakpoint-large){
       font-size: 0.8em;
     }
-    @include mediaQ($layout-breakpoint-small){
+    @include mediaQ($layout-breakpoint-medium){
       font-size: 0.6em;
     }
 
-    @include mediaQ($layout-breakpoint-extra-small){
+    @include mediaQ($layout-breakpoint-small){
       font-size: 0.4em;
     }
   }
@@ -96,10 +96,11 @@ body{
     border-radius: 6px 6px 6px 6px;
     padding: 30px;
     color: $hover-color;
-    font-size: 3em;
+    font-size: 5em;
     margin: 20px;
     font-weight: bold;
-    width: 195px;
+    width: 240px;
+    height: 240px;
     position: relative;
 
       &:before {
@@ -110,32 +111,38 @@ body{
         border-radius: 10px;
         position: absolute;
         left: -6px;
-        top: 74px;
+        top: 113px;
         z-index: 10;
         border-left: 6px solid $background-color;
 
-          @include mediaQ($layout-breakpoint-large){
+          @include mediaQ($layout-breakpoint-xlarge){
             height: 12px;
             width: 8px;
             position: absolute;
             left: -6px;
-            top: 47px;
+            top: 92px;
             z-index: 10;
             border-left: 6px solid $background-color;
           }
 
-        @include mediaQ($layout-breakpoint-medium){
-          top: 42px;
-        }
+          @include mediaQ($layout-breakpoint-large){
+            top: 73px;
+          }
 
-        @include mediaQ($layout-breakpoint-small){
-          height: 8px;
-          width: 6px;
-          top: 30px;
-        }
+          @include mediaQ($layout-breakpoint-medium){
+            height: 8px;
+            width: 6px;
+            top: 55px;
+          }
+
+          @include mediaQ($layout-breakpoint-small){
+            height: 6px;
+            top: 34px;
+          }
 
         @include mediaQ($layout-breakpoint-extra-small){
-          top: 22px;
+          height: 6px;
+          top: 26px;
         }
 
       }
@@ -147,65 +154,84 @@ body{
         border-radius: 10px;
         position: absolute;
         right: -6px;
-        top: 74px;
+        top: 113px;
         z-index: 10;
         border-right: 6px solid #1e1f29;
 
-          @include mediaQ($layout-breakpoint-large){
+          @include mediaQ($layout-breakpoint-xlarge){
             height: 12px;
             width: 2px;
             position: absolute;
             right: -6px;
-            top: 47px;
+            top: 92px;
             z-index: 10;
             border-left: 6px solid $background-color;
           }
 
-          @include mediaQ($layout-breakpoint-medium){
-            top: 42px;
+          @include mediaQ($layout-breakpoint-large){
+            top: 73px;
           }
 
-        @include mediaQ($layout-breakpoint-small){
+        @include mediaQ($layout-breakpoint-medium){
           height: 8px;
           width: 1px;
-          top: 30px;
+          top: 55px;
+        }
+
+        @include mediaQ($layout-breakpoint-small){
+          height: 6px;
+          top: 34px;
         }
 
         @include mediaQ($layout-breakpoint-extra-small){
-          top: 22px;
+          height: 6px;
+          top: 26px;
         }
       }
 
-    @include mediaQ($layout-breakpoint-large){
+    @include mediaQ($layout-breakpoint-xlarge){
       border-radius: 6px 6px 6px 6px;
       padding: 20px;
-      font-size: 2em;
+      font-size: 4.5em;
       margin: 15px;
-      width: 145px;
+      width: 200px;
+      height: 200px;
+    }
+
+    @include mediaQ($layout-breakpoint-large){
+      border-radius: 6px 6px 6px 6px;
+      padding: 18px;
+      font-size: 3.5em;
+      margin: 12px;
+      width: 160px;
+      height: 160px;
     }
 
     @include mediaQ($layout-breakpoint-medium){
       border-radius: 6px 6px 6px 6px;
-      padding: 18px;
-      font-size: 1.8em;
-      margin: 12px;
-      width: 110px;
+      padding: 16px;
+      font-size: 3.3em;
+      margin: 10px;
+      width: 120px;
+      height: 120px;
     }
 
     @include mediaQ($layout-breakpoint-small){
       border-radius: 6px 6px 6px 6px;
-      padding: 16px;
-      font-size: 1.6em;
-      margin: 10px;
+      padding: 14px;
+      font-size: 2.8em;
+      margin: 8px;
       width: 80px;
+      height: 80px;
     }
 
     @include mediaQ($layout-breakpoint-extra-small){
       border-radius: 6px 6px 6px 6px;
       padding: 14px;
-      font-size: 1.4em;
+      font-size: 1.8em;
       margin: 8px;
       width: 60px;
+      height: 60px;
     }
   }
 
